@@ -78,3 +78,38 @@ body{
     border-left-width: 0;
     border-right-width: 0;
 }
+
+.buttons{
+    position: absolute;
+    inset: calc(var(--border-width) * -1);
+    pointer-events: none;
+}
+
+.buttons .left, .buttons .right{
+    position: absolute;
+    width: var(--button-width);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5em;
+}
+
+.buttons .left{
+    right: 100%;
+    top: calc(var(--border-radius) * 2)
+}
+
+.buttons .left .buttons:nth-child(1){
+    height: 3em;
+    margin-bottom: 0.5em;
+}
+
+.buttons .right{
+    left: 100%;
+    transform: scale3d(-1, 1, 1);
+    top: calc(var(--border-radius) * 3);
+}
+
+.buttons .right .buttons{
+    height: 9.5em;
+}
