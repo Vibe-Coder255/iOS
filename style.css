@@ -32,3 +32,22 @@
     }
 }
 
+@keyframes appear{
+    to{
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+body{
+    background: #00000a;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Inter';
+    font-size: var(--size);
+}
+
