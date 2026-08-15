@@ -3,7 +3,7 @@
 
 :root{
     --size: max(5px, 1vmin);
-    --height: 80em;
+    --heght: 80em;
     --pad: 1.25em;
     --border-radius: 6.666em;
     --gutter: calc(var(--pad) * 2);
@@ -49,5 +49,21 @@ body{
     min-height: 100vh;
     font-family: 'Inter';
     font-size: var(--size);
+}
+
+.phone{
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 37/76;
+    background: black;
+    height: var(--heght);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale3d(1.1, 1.1, 1);
+    -webkit-animation: appear 1s var(--ease-out) forwards;
+    animation: appear 1s var(--ease-out) forwards;
+    --webkit-backface-visibility: hidden;
 }
 
