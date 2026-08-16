@@ -439,7 +439,7 @@ body{
     pointer-events: none;
     position: absolute;
     z-index: 4;
-    top: calc(var(--pad) * 2);
+    top: calc(var(--pad) * 1);
     right: calc(50% - calc(var(--notch-width) * 0.5));
     margin-right: calc(var(--pad) * 0.333);
 }
